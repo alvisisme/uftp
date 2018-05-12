@@ -30,6 +30,9 @@
 
 UNAME_S:=$(shell uname -s)
 
+# default encryption none
+NO_ENCRYPTION=1
+
 ifdef NO_ENCRYPTION
 ENC_OPTS=-DNO_ENCRYPTION
 CRYPT_LIB=
