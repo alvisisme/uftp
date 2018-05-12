@@ -114,7 +114,12 @@ void getiflist(struct iflist *list, int *len)
 
 #ifdef HAS_GETIFADDRS
 
+#ifdef ANDROID
+#include "ifaddrs_android.h"
+#else
 #include <ifaddrs.h>
+#endif
+
 
 void getiflist(struct iflist *list, int *len)
 {

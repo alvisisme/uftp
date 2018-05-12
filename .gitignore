@@ -57,3 +57,9 @@ uftpd
 uftp_keymgt
 uftpproxyd
 
+# Android ndk build files
+libs/
+obj/
+
+# text editor
+.vscode
