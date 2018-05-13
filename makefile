@@ -191,6 +191,9 @@ uftpproxyd: $(UFTPPROXYD_OBJS)
 uftp_keymgt: $(UFTP_KEYMGT_OBJS)
 	$(CC) $(LDFLAGS) $(OPTIONS) $(LIB) -o $@ $^ $(LDLIBS)
 
+android:
+	ndk-build NDK_PROJECT_PATH=.  APP_BUILD_SCRIPT=Android.mk APP_ABI="arm64-v8a"
+
 %.o: %.c
 	$(CC) $(CPPFLAGS) $(OPTIONS) $(INCLUDE) $(CFLAGS) $(MTFLAGS) -c $<
 
