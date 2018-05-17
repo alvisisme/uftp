@@ -47,7 +47,7 @@
 #define DEF_GRTT                0.5
 #define DEF_MIN_GRTT            0.01
 #define DEF_MAX_GRTT            15.0
-#define DEF_ROBUST              20
+#define DEF_ROBUST              1
 #define DEF_TXWEIGHT            0
 #define DEF_MAX_NAK_PCT         100
 #define DEF_MAX_NAK_CNT         1

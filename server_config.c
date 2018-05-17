@@ -809,10 +809,12 @@ void process_args(int argc, char *argv[])
             break;
         case 's':
             robust = atoi(optarg);
+            /**
             if ((robust < 10) || (robust > 50)) {
                 fprintf(stderr,"Invalid robustness factor\n");
                 exit(ERR_PARAM);
             }
+            */
             break;
         case 'i':
             if (filecount != 0) {
