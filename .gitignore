@@ -56,6 +56,7 @@ uftp
 uftpd
 uftp_keymgt
 uftpproxyd
+build/
 
 # Android ndk build files
 libs/

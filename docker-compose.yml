@@ -1,0 +1,7 @@
+version: '2'
+services:
+  uftp-for-android:
+    build: .
+    image: uftp-for-android-arm64-v8a
+    volumes:
+      - ./build:/uftp/build
